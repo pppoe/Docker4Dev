@@ -26,7 +26,7 @@ echo "DOCKER_USER_NAME: $DOCKER_USER_NAME"
 echo "DOCKER_UID: $DOCKER_UID"
 echo "DOCKER_GID: $DOCKER_GID"
 sudo nvidia-docker build \
-  --build-arg DOCKER_USER_NAME=$DOCKER_USER_NAME \
+  --build-arg DOCKER_USER=$DOCKER_USER_NAME \
   --build-arg DOCKER_PASS=$DOCKER_PASS \
   --build-arg DOCKER_UID=$DOCKER_UID \
   --build-arg DOCKER_GID=$DOCKER_GID \
